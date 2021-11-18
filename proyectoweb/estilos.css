@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(imagenes/wp1894822-motherboard-wallpapers.jpg);
+    background-position: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    /*width: 70%;*/
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black;
+    background: #eee;
+}
+
+header{
+    
+    background-color: #ffcd48;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px;
+    
+    border-bottom: 1px solid black;
+}
+nav{
+    
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+.clearfix{
+    clear: both;
+}
+
+#content{
+    float: left;
+    width: calc(80% - 80px);
+    background: #eee;
+    min-height: 500px;
+    padding: 40px;
+}
+
+.article{
+    color: rgb(20, 20, 20);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(20, 20, 20);
+}
+.article:first-child{
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.article h2{
+    font-size: 25px;
+}
+
+aside{
+    float: left;
+    width: calc(20% - 40px);
+    background: #1d2f3d;
+    min-height: 30px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 60px;
+}
+
+aside .titulo{
+    color: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+aside a{
+    color: #ffcd48;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer{
+    background: #1d2f3d;
+    color: #ffcd48;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+/** Horario **/
+
+#table{
+    text-align: center;    
+}
+   
+
+#dias{
+    background: #1d2f3d;
+    color: #ffcd48;   
+}
+
+.horas{
+    background: #1d2f3d;
+    color: #ffcd48;
+}
+
+.mmeq{
+    background-color: rgb(24, 109, 24);
+    color: white;
+}
+
+.som{
+    background-color: rgb(190, 68, 68);
+    color: white;
+}
+
+.aweb{
+    background-color: rgb(37, 98, 148);
+    color: white;
+}
+
+.ing{
+    background-color: rgb(207, 137, 7);
+    color: white;
+}
+
+.redes{
+    background-color: rgb(172, 100, 172);
+    color: white;
+}
+
+.fol{
+    background-color: rgb(137, 172, 41);
+    color: white;
+}
