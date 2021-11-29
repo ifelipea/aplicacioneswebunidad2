@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Statements</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="suma"></p>
+<p id="resta"></p>
+<p id="multiplicacion"></p>
+<p id="division"></p>
+
+<script>
+    let numero1, numero2, suma, resta, multiplicacion, division;    // Statement 1
+    numero1 = 5;        		                                    // Statement 2
+    numero2 = 6;        		                                    // Statement 3
+    suma = numero1 + numero2;                                       // Statement 4
+    resta = numero1 - numero2;                                      // Statement 5
+    multiplicacion = numero1 *  numero2;                            // Statement 6
+    division = numero1 / numero2;                                   // Statement 7
+
+    document.getElementById("suma").innerHTML =
+        "La suma de "+ numero1 +" y "+ numero2 +" es "+ suma +".";
+    document.getElementById("resta").innerHTML =
+        "La resta de "+ numero1 +" y "+ numero2 +" es "+ resta +".";
+    document.getElementById("multiplicacion").innerHTML =
+        "La multiplicacion de "+ numero1 +" y "+ numero2 +" es "+ multiplicacion +".";
+    document.getElementById("division").innerHTML =
+        "La division de "+ numero1 +" y "+ numero2 +" es "+ division +".";
+  
+</script>
+
+
+</body>
+</html>
