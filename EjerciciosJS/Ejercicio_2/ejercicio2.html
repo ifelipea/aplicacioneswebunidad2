@@ -9,32 +9,41 @@
 <body>
     <h2>JavaScript Statements</h2>
 
-<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
 
-<p id="suma"></p>
-<p id="resta"></p>
-<p id="multiplicacion"></p>
-<p id="division"></p>
+    <p id="suma"></p>
+    <p id="resta"></p>
+    <p id="multiplicacion"></p>
+    <p id="division"></p>
+    <p id="potencia"></p>
+    <p id="resto"></p>
+    
 
-<script>
-    let numero1, numero2, suma, resta, multiplicacion, division;    // Statement 1
-    numero1 = 5;        		                                    // Statement 2
-    numero2 = 6;        		                                    // Statement 3
-    suma = numero1 + numero2;                                       // Statement 4
-    resta = numero1 - numero2;                                      // Statement 5
-    multiplicacion = numero1 *  numero2;                            // Statement 6
-    division = numero1 / numero2;                                   // Statement 7
+    <script>
+        let numero1, numero2, suma, resta, multiplicacion, division, potencia, resto;    // Esto es un comentario
+            numero1 = 5;        		                                    
+            numero2 = 6;        		                                    
+            suma = numero1 + numero2;                                       
+            resta = numero1 - numero2;                                      
+            multiplicacion = numero1 * numero2;                            
+            division = numero1 / numero2;                                   
+            potencia = numero1 ** numero2;                            
+            resto = numero1 % numero2;
 
-    document.getElementById("suma").innerHTML =
-        "La suma de "+ numero1 +" y "+ numero2 +" es "+ suma +".";
-    document.getElementById("resta").innerHTML =
-        "La resta de "+ numero1 +" y "+ numero2 +" es "+ resta +".";
-    document.getElementById("multiplicacion").innerHTML =
-        "La multiplicacion de "+ numero1 +" y "+ numero2 +" es "+ multiplicacion +".";
-    document.getElementById("division").innerHTML =
-        "La division de "+ numero1 +" y "+ numero2 +" es "+ division +".";
-  
-</script>
+        document.getElementById("suma").innerHTML =
+            "La suma de "+ numero1 +" y "+ numero2 +" es "+ suma +".";
+        document.getElementById("resta").innerHTML =
+            "La resta de "+ numero1 +" y "+ numero2 +" es "+ resta +".";
+        document.getElementById("multiplicacion").innerHTML =
+            "La multiplicacion de "+ numero1 +" y "+ numero2 +" es "+ multiplicacion +".";
+        document.getElementById("division").innerHTML =
+            "La division de "+ numero1 +" y "+ numero2 +" es "+ division +".";
+        document.getElementById("potencia").innerHTML =
+            "El exponente de "+ numero1 +" elevado "+ numero2 +" es "+ potencia +".";
+        document.getElementById("resto").innerHTML =
+            "El resto de "+ numero1 +" y "+ numero2 +" es "+ resto +".";
+
+    </script>
 
 
 </body>

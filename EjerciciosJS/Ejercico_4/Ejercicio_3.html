@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table border="1">
+
+    <form>
+        <label for="numero1"> Numero 1: </label>
+        <input id="numero1" type="text" /><br><br>
+        <label for="numero2"> Numero 2: </label>
+        <input id="numero2" type="text" /><br><br>
+        <label> Suma:</label>
+        <label id="resultado">  </label><br><br>
+        <label> Multiplicación:</label>
+        <label id="multiplicacion">  </label><br><br>
+        <label> División:</label>
+        <label id="division">  </label><br><br>
+        <label> Potencia:</label>
+        <label id="potencia">  </label><br><br>
+        <label> Resto:</label>
+        <label id="resto">  </label><br><br>        
+    </form>
+
+    <button onclick="suma();">Suma</button>
+    <script>
+        function suma(){
+            var numero1 = parseInt(document.getElementById("numero1").value);
+            var numero2 = parseInt(document.getElementById("numero2").value);
+            document.getElementById("resultado").textContent=(numero1+numero2).toString();
+            document.getElementById("multiplicacion").textContent=(numero1*numero2).toString();
+            document.getElementById("division").textContent=(numero1/numero2).toString();
+            document.getElementById("potencia").textContent=(numero1**numero2).toString();
+            document.getElementById("resto").textContent=(numero1%numero2).toString();
+        }
+    </script>
+
+    </table>
+
+</body>
+</html>

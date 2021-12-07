@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            Operaciones con Formulario
+        </legend>
+        <form>
+    
+            <label for="numero1"> Numero 1: </label>
+            <input id="numero1" type="text" /><br><br>
+            <label for="numero2"> Numero 2: </label>
+            <input id="numero2" type="text" /><br><br>
+            <label> Resultado:</label>
+            <label id="resultado">  </label><br><br>
+
+        </form>
+
+        <button 
+        onclick="botonSumar(parseInt(document.getElementById('numero1').value), parseInt(document.getElementById('numero2').value) );">
+        Sumar
+        </button>
+
+        <button 
+        onclick="botonRestar(parseInt(document.getElementById('numero1').value), parseInt(document.getElementById('numero2').value) );">
+        Restar
+        </button>
+
+        <button 
+        onclick="botonMultiplicacion(parseInt(document.getElementById('numero1').value), parseInt(document.getElementById('numero2').value) );">
+        Multiplicación
+        </button>
+
+        <button 
+        onclick="botonDivision(parseInt(document.getElementById('numero1').value), parseInt(document.getElementById('numero2').value) );">
+        División
+        </button>
+
+        <button 
+        onclick="botonPotencia(parseInt(document.getElementById('numero1').value), parseInt(document.getElementById('numero2').value) );">
+        Potencia
+        </button>
+
+        <button 
+        onclick="botonResto(parseInt(document.getElementById('numero1').value), parseInt(document.getElementById('numero2').value) );">
+        Resto
+        </button>
+            
+
+        <script>
+
+            
+
+            function botonSumar( numero1, numero2){
+                document.getElementById("resultado").textContent=sumar(numero1, numero2);
+            }
+            function sumar( numero1, numero2){
+                return numero1+numero2;
+            }
+
+            function botonRestar( numero1, numero2){
+                document.getElementById("resultado").textContent=restar(numero1, numero2);
+            }
+            function restar( numero1, numero2){
+                return numero1-numero2;
+            }
+
+            function botonMultiplicacion( numero1, numero2){
+                document.getElementById("resultado").textContent=multiplicacion(numero1, numero2);
+            }
+            function multiplicacion( numero1, numero2){
+                return numero1*numero2;
+            }
+
+            function botonDivision( numero1, numero2){
+                document.getElementById("resultado").textContent=division(numero1, numero2);
+            }
+            function division( numero1, numero2){
+                return numero1/numero2;
+            }
+
+            function botonPotencia( numero1, numero2){
+                document.getElementById("resultado").textContent=potencia(numero1, numero2);
+            }
+            function potencia( numero1, numero2){
+                return numero1**numero2;
+            }
+
+            function botonResto( numero1, numero2){
+                document.getElementById("resultado").textContent=resto(numero1, numero2);
+            }
+            function resto( numero1, numero2){
+                return numero1%numero2;
+            }
+        
+
+        </script>
+    </fieldset>
+</body>
+</html>
